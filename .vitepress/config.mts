@@ -2,30 +2,40 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "mythicOps_doc",
+  title: "MythicOpsDoc",
   description: "mythicOps document",
+  head: [['link', { rel: 'icon', href: './ico.svg' }]],
   themeConfig: {
+    logo: '/ico.svg',
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'UI', link: '/markdown-examples' },
-      { text: '前端', link: '/markdown-examples' },
-      { text: '后端', link: '/markdown-examples' }
+      { text: '项目介绍', link: '/overview' },
+      {
+        text: '项目设计',
+        items: [
+          { text: 'UI原型', link: '/ui' },
+          { text: '前端', link: '/front-end' },
+          { text: '后端', link: '/rear-end' },
+        ]
+      }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'MythicOps',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '项目介绍', link: '/overview' },
+          { text: 'UI 原型', link: '/ui' },
+          { text: '前端', link: '/front-end' },
+          { text: '后端', link: '/rear-end' }
         ]
       }
     ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lldscc/MythicOps' },
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ]
   }
 })

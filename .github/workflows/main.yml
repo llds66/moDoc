@@ -6,14 +6,13 @@ on:
       - main
 jobs:
   build:
-    runs-on: ubuntu-latest # 在 ubuntu-latest 虚拟环境上运行
+    runs-on: ubuntu-latest 
     steps:
-    - uses: actions/checkout@v4 # 将仓库代码签出到运行 GitHub Action 工作流的虚拟机上
+    - uses: actions/checkout@v4 
     - name: Install dependencies
       run: npm install
     - name: Build VitePress site
       run: npm run docs:build
-      # 使用 SSH 和 SCP 将 .vitepress/dist 目录复制到远程服务器上的 /var/www/blog 目录
     - name: Deploy
       uses: cross-the-world/scp-pipeline@master
       env:
