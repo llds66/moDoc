@@ -4,9 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "MythicOpsDoc",
   description: "mythicOps document",
-  head: [['link', { rel: 'icon', href: './ico.svg' }]],
+  head: [['link', { rel: 'icon', href: '../ico.svg' }]],
   themeConfig: {
-    logo: '/ico.svg',
+    logo: '../ico.svg',
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
