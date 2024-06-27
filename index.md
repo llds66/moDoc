@@ -19,7 +19,7 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: 系统监控
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: 用户权限控制
+  - title: 用户权限
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
