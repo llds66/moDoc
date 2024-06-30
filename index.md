@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 访问网站
-      link: https://mythicops.lldscc.online/
+      link: https://mo.llds.tech
     - theme: alt
       text: 文档
       link: /ui

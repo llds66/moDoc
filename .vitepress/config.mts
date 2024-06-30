@@ -35,7 +35,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/lldscc/MythicOps' },
+      { icon: 'github', link: 'https://github.com/lldscc/mo' },
     ]
   }
 })
